@@ -1,15 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
 :root{
   --lusious-pink:#e11874;
   --pastel-pink:#f8dce1;
   --milk:#f7f5dd;
   --chocolate-milk:#D2691E;
-  --rose-pink:#FF69B4;
+  --rose-pink:#ea5f9e;
+  --dark-gray:#333333;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 .App{
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  background-color: var(--milk);
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+h1,h2,h3{
+  font-family: "Pacifico", cursive;
+  text-transform: capitalize;
+}
+
+header{
+  position: absolute;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-items: center;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+  color: var(--milk);
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.nav-item{
+  margin: 0 1rem;
 }
 
 .hero-section{
@@ -24,6 +60,7 @@
 .about-brand{
   display: flex;
   justify-content: space-around;
+  margin-top: 4rem;
 }
 
 .brand{
@@ -33,7 +70,6 @@
 
 .brand-name{
   font-size: 6rem;
-  font-family: "Pacifico", cursive;
   color: var(--pastel-pink);
   margin: 0;
 }
@@ -54,15 +90,19 @@
 .jump-menu{
   width: max-content;
   position: absolute;
-  top: 25rem;
+  top: 29rem;
   transform: translateX(50%);
   padding:.7rem 1.5rem;
   border-radius: 21px;
   background-color: var(--milk);
-  color: var(--chocolate-milk);
   border: none;
   font-weight: 600;
   font-size: 1rem;
+}
+
+.jump-menu a{
+  text-decoration: none;
+  color: var(--chocolate-milk);
 }
 
 .jump-menu:hover{
@@ -75,4 +115,101 @@
   background-image: url("./img/divider.png");
   background-size: 500px;
   margin-top: 0;
+}
+
+.menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem; 
+  box-sizing: border-box;
+  gap: 5rem;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 4rem;
+}
+
+.product {
+  width: 20rem;
+  height: 29rem;
+  margin: 0 1rem;
+  border: 4px solid var(--chocolate-milk);
+  border-radius: 105px 105px 0 0;
+  padding: 1rem 1.5rem 0 1.5rem;
+  color: var(--dark-gray);
+  font-size: .9rem;
+  box-shadow: 1px 1px 10px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+
+.product img{
+  width: 100%;
+  border-radius: 40% 40% 0 0;
+}
+
+.price-details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart{
+  width: 1rem;
+  height: 1rem;
+  padding: .4rem;
+  background-color: var(--rose-pink);
+  border-radius: 50%;
+}
+
+.product-name{
+  color: var(--chocolate-milk);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.product-price{
+  font-weight: 600;
+}
+
+.menu-header{
+  text-align: center;
+  margin: 6rem 0;
+  font-size: 3rem;
+  color: var(--lusious-pink);
+}
+
+.about{
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.about img{
+  position: absolute;
+}
+
+.top-art{
+  width: 18rem;
+  transform: translateY(30rem);
+}
+
+.bottom-art{
+  right: 0;
+  transform: translateY(-12%);
+  width: 25rem;
+}
+
+
+.article{
+  padding: 5rem;
+  color: var(--dark-gray);
+}
+
+.article>h2{
+  color: var(--lusious-pink);
+  text-align: center;
+}
+
+article{
+  margin: 0 9rem;
 }

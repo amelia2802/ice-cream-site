@@ -11,7 +11,7 @@ export default function Hero(){
                     <img src={brandImg} alt="raspberry icecream"/>
                 </section>
             </section>
-            <button className="jump-menu">See Menu</button>
+            <button className="jump-menu"><a href="#product">Menu</a></button>
         </section>
     )
 }
