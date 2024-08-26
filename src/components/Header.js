@@ -8,6 +8,7 @@ export default function Header(){
                     <li className="nav-item"><a href="#product">Menu</a></li>
                     <li className="nav-item"><a href="#about-section">About</a></li>
                     <li className="nav-item"><a href="#review-card">Reviews</a></li>
+                    <li className="nav-item"><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </header>
