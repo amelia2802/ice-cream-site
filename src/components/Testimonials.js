@@ -23,7 +23,7 @@ export default function Testimonials() {
             <section className="testimonials">
             {testimonials.map((testimonial, index) => (
                 <div key={index} className={`test-card ${index % 2 === 0 ? 'up-card' : 'down-card'}`}>
-                    <h4>{testimonial.name}</h4>
+                    <h3>{testimonial.name}</h3>
                     <div className="ratings">
                         {[...Array(5)].map((_, i) => (
                             <img 
