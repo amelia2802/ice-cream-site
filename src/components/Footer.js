@@ -30,6 +30,16 @@ export default function Footer(){
 
     return(
         <footer id="footer">
+            <div className="footer">
+            <section className="address">
+                <h4>Luvelicious Ice Cream Parlor</h4>
+                
+                <p>123 Sweet Treats Avenue</p>
+                    <p>Frostville, FL 56789</p>
+                    <p>United States</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@luvelicious.com</p>
+            </section>
             <form className="form" onSubmit={handleSubmit}>
                 <input 
                     type="text" 
@@ -47,10 +57,10 @@ export default function Footer(){
                     onChange={handleChange}
                     value={formData.email}
                 />
-                <input 
+                <textarea 
                     type="text" 
-                    placeholder="Message"
-                    className="form--input"
+                    placeholder="Feedback"
+                    className="form--input message"
                     name="feedback"
                     onChange={handleChange}
                     value={formData.feedback}
@@ -69,9 +79,10 @@ export default function Footer(){
                 <button 
                     className="form--submit"
                 >
-                    Sign up
+                    Submit
                 </button>
             </form>
+            </div>
         </footer>
     )
 }

@@ -4,9 +4,10 @@
   --lusious-pink:#e11874;
   --pastel-pink:#f8dce1;
   --milk:#fbe6c7;
-  --chocolate-milk:#D2691E;
+  --chocolate-milk:#c1554d;
   --rose-pink:#ea5f9e;
   --dark-gray:#333333;
+  --glass:#fbe6c751;
 }
 
 html {
@@ -318,13 +319,17 @@ article{
 }
 
 footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
   background-image: url("https://i.pinimg.com/564x/aa/92/a8/aa92a80df78da731ef7be65c9a600b82.jpg");
-  justify-content: space-evenly;
   padding-top: 8rem;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--glass);
+  margin: 0 5rem;
 }
 
 .delivery{
@@ -346,4 +351,36 @@ footer{
   background-color: var(--pastel-pink);
   border: 1rem solid pink;
   border-image:repeating-linear-gradient(45deg, transparent, transparent 5px, pink 6px, pink 15px, transparent 16px, transparent 20px) 20/1rem;
+}
+
+.address{
+  font-weight: 600;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+input[type=text], input[type=email]{
+  width: 100%;
+  padding: 1rem;
+  margin: .6rem 0;
+}
+
+.message{
+  width: 100%;
+  padding: 1rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.form--submit{
+  margin: auto;
+  margin-top: .6rem;
+  padding:.5rem 1rem;
+  border-radius: 23px;
+  background-color: var(--lusious-pink);
+  color: var(--pastel-pink);
 }
