@@ -34,6 +34,7 @@ header{
   position: fixed;
   background:url("./img/divider.png");
   height: 4rem;
+  z-index: 1;
 }
 
 .nav-list{
@@ -122,6 +123,9 @@ header{
 
 .jump-menu:hover{
   box-shadow: .5px 5px 10px var(--rose-pink);
+  outline: .2rem solid var(--chocolate-milk);
+  outline-offset: 4px;
+  background-color: var(--pastel-pink);
 }
 
 .divider{
@@ -349,8 +353,8 @@ footer{
   padding:2rem 3rem;
   margin: 0 2rem;
   background-color: var(--pastel-pink);
-  border: 1rem solid pink;
-  border-image:repeating-linear-gradient(45deg, transparent, transparent 5px, pink 6px, pink 15px, transparent 16px, transparent 20px) 20/1rem;
+  border: 1rem solid var(--rose-pink);
+  border-image:repeating-linear-gradient(45deg, transparent, transparent 5px, pink 6px, var(--rose-pink) 15px, transparent 16px, transparent 20px) 20/1rem;
 }
 
 .address{
@@ -383,4 +387,11 @@ input[type=text], input[type=email]{
   border-radius: 23px;
   background-color: var(--lusious-pink);
   color: var(--pastel-pink);
+  border: none;
+}
+
+.form--submit:hover{
+  outline: 0.2rem solid var(--rose-pink);
+  outline-offset: 4px;
+  background-color: var(--rose-pink);
 }

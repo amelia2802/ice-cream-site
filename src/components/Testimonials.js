@@ -8,7 +8,7 @@ export default function Testimonials() {
         {
             name: "Emma Wilson",
             rating: 5,
-            text: "I recently discovered Luvelicious, and I’m hooked! The Raspberry Ripple is hands down my favorite flavor—it's the perfect combination of sweet and tangy. The raspberry sauce tastes so fresh and pairs beautifully with the creamy ice cream. It’s the perfect treat after a long day, and I love knowing I’m enjoying quality ingredients. Can’t wait to try more flavors!"
+            text: "I recently discovered Luvelicious, and I'm hooked! The Raspberry Ripple is hands down my favorite flavor—it's the perfect combination of sweet and tangy. The raspberry sauce tastes so fresh and pairs beautifully with the creamy ice cream. It’s the perfect treat after a long day, and I love knowing I’m enjoying quality ingredients. Can’t wait to try more flavors!"
         },
         {
             name: "John Smith",

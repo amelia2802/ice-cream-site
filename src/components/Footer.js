@@ -48,6 +48,7 @@ export default function Footer(){
                     name="fullName"
                     onChange={handleChange}
                     value={formData.fullName}
+                    required
                     />
                 <input 
                     type="email" 
@@ -56,10 +57,11 @@ export default function Footer(){
                     name="email"
                     onChange={handleChange}
                     value={formData.email}
+                    required
                 />
                 <textarea 
                     type="text" 
-                    placeholder="Feedback"
+                    placeholder="Feedback (optional)"
                     className="form--input message"
                     name="feedback"
                     onChange={handleChange}
