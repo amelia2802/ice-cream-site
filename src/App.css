@@ -64,6 +64,10 @@ header{
   color: var(--pastel-pink);
 }
 
+.hamburger{
+  display: none;
+}
+
 .hero-section{
   width: 100%;
   height: auto;
@@ -394,4 +398,73 @@ input[type=text], input[type=email]{
   outline: 0.2rem solid var(--rose-pink);
   outline-offset: 4px;
   background-color: var(--rose-pink);
+}
+
+@media only screen and (max-width: 450px) { 
+  header{
+    width: 100%;
+    padding: 2.1rem 6rem;
+  }
+  
+  .nav-list{
+    display: none;
+  }
+
+  .hamburger{
+    font-size: 2.5rem;
+    display: block;
+    position: absolute;
+    right: 0;
+    color: var(--pastel-pink);
+  }
+
+  .hero-section{
+    padding: 0 3rem;
+  }
+  
+  .brand{
+    width: max-content;
+  }
+  
+  .brand-name{
+    font-size: 2rem;
+  }
+  
+  .brand-tag{
+    font-size: 1rem;
+    line-height: 35px;
+  }
+  
+  .brand-img{
+    width: 20%;
+    transform: rotate(20.5deg);
+    position: relative;
+    right: 8rem;
+    top: .6rem;
+  }
+  
+  .jump-menu{
+    top: 23rem;
+    transform: translateX(0);
+    padding:.5rem 1.2rem;
+    font-size: .8rem;
+  }
+
+  .delivery{
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .contact{
+    width: 8rem;
+    height: 8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:2rem 3rem;
+    margin: 0 2rem;
+    background-color: var(--pastel-pink);
+    border: 1rem solid var(--rose-pink);
+    border-image:repeating-linear-gradient(45deg, transparent, transparent 5px, pink 6px, var(--rose-pink) 15px, transparent 16px, transparent 20px) 20/1rem;
+  }
 }
