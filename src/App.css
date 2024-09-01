@@ -401,9 +401,13 @@ input[type=text], input[type=email]{
 }
 
 @media only screen and (max-width: 450px) { 
+  body{
+    overflow-x: hidden;
+  }
   header{
-    width: 100%;
-    padding: 2.1rem 6rem;
+    height: 6rem;
+    background-size: 500px;
+    padding: 0;
   }
   
   .nav-list{
@@ -411,19 +415,15 @@ input[type=text], input[type=email]{
   }
 
   .hamburger{
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: block;
     position: absolute;
-    right: 0;
+    right: 1rem;
     color: var(--pastel-pink);
   }
 
   .hero-section{
-    padding: 0 3rem;
-  }
-  
-  .brand{
-    width: max-content;
+    padding: 0 1rem;
   }
   
   .brand-name{
@@ -436,15 +436,19 @@ input[type=text], input[type=email]{
   }
   
   .brand-img{
-    width: 20%;
+    width: 12rem;
     transform: rotate(20.5deg);
     position: relative;
-    right: 8rem;
-    top: .6rem;
+    right: 3rem;
+    top: 7rem;
+  }
+  .brand-img img{
+    width: 100%;
   }
   
   .jump-menu{
-    top: 23rem;
+    top: 25rem;
+    right: 6rem;
     transform: translateX(0);
     padding:.5rem 1.2rem;
     font-size: .8rem;
@@ -452,19 +456,120 @@ input[type=text], input[type=email]{
 
   .delivery{
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 2rem;
   }
 
   .contact{
-    width: 8rem;
-    height: 8rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding:2rem 3rem;
-    margin: 0 2rem;
-    background-color: var(--pastel-pink);
-    border: 1rem solid var(--rose-pink);
-    border-image:repeating-linear-gradient(45deg, transparent, transparent 5px, pink 6px, var(--rose-pink) 15px, transparent 16px, transparent 20px) 20/1rem;
+    width: 10rem;
+    height: 15rem;
+    padding:2rem;
+    margin: 2rem;
   }
+
+  
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0; 
+  margin-left: 0;
+  margin: 0 1rem;
+}
+
+.product {
+  width: 90%;
+  height: fit-content;
+  margin: 0;
+  border: none;
+  border-radius:  0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.product img{
+  border-radius: 40% 40% 0 0;
+}
+
+.price-details{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart{
+  width: 1rem;
+  height: 1rem;
+  padding: .4rem;
+  background-color: var(--rose-pink);
+  border-radius: 50%;
+}
+
+.product-name{
+  color: var(--chocolate-milk);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.product-price{
+  font-weight: 600;
+}
+
+.menu-header{
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.review{
+  flex-direction: column;
+}
+
+.about{
+  flex-direction: column;
+  font-size: 1rem;
+}
+.top-art{
+  width: 10rem;
+  transform: translateY(40rem);
+}
+
+.bottom-art{
+  right: -1rem;
+  transform: translateY(-20%);
+  width: 10rem;
+}
+
+
+.article{
+  padding: 0;
+}
+
+article{
+  margin: 0 1rem;
+}
+
+#review-card{
+  display: none;
+  margin-top: 9rem;
+}
+
+#review-card h2{
+  font-size: 1.5rem;
+}
+
+.footer{
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.form{
+  padding: .1rem;
+}
+
+input[type=text], input[type=email]{
+  width: 90%;
+}
+
+.message{
+  width: 90%;
+}
+
 }
