@@ -1,7 +1,8 @@
 # 🍦 Luvelicious Site
 
 Welcome to the Luvelicious Site! This project showcases a dynamic ice cream website built using React. The site includes various sections such as Header, Hero Section, Offers, Menu, About, Testimonials, and Footer.
-![Untitled design (5)](https://github.com/user-attachments/assets/316b5cb3-0c02-47e3-b1df-e179bb380cdf)
+![Mockup](https://github.com/user-attachments/assets/a5a16007-3b15-4492-9209-d0054b493d6b)
+![Mockup](https://github.com/user-attachments/assets/316b5cb3-0c02-47e3-b1df-e179bb380cdf)
 
 ## 🚀 Features
 
