@@ -12,13 +12,19 @@ export default function Header(){
             <CiMenuKebab className="hamburger" onClick={() => setToggled(!toggled)}/>
             {
                 window.innerWidth<600 ? 
-                    <Sidebar onBackdropClick={() => setToggled(false)} toggled={toggled} breakPoint="always">
+                    <Sidebar 
+                        onBackdropClick={() => setToggled(false)} 
+                        toggled={toggled} 
+                        breakPoint="always" 
+                        image="https://i.pinimg.com/564x/ee/17/91/ee1791186d610736dd3ce5e24714196a.jpg"
+                        rtl
+                    >
                     <nav className="navbar">
-                        <Menu  className="nav-list">
-                            <MenuItem href="#">Home</MenuItem>
-                            <MenuItem href="#product">Menu</MenuItem>
-                            <MenuItem href="#about-section">About</MenuItem>
-                            <MenuItem href="#footer">Contact</MenuItem>
+                        <Menu>
+                            <MenuItem className="nav-item" href="#">Home</MenuItem>
+                            <MenuItem className="nav-item" href="#product">Menu</MenuItem>
+                            <MenuItem className="nav-item" href="#about-section">About</MenuItem>
+                            <MenuItem className="nav-item" href="#footer">Contact</MenuItem>
                         </Menu >
                     </nav>
                     </Sidebar>
