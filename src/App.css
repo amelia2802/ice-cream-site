@@ -68,6 +68,12 @@ header{
   display: none;
 }
 
+.add-to-cart{
+  position: absolute;
+  right: 24rem;
+  top: 1rem;
+}
+
 .hero-section{
   width: 100%;
   height: auto;
@@ -398,6 +404,53 @@ input[type=text], input[type=email]{
   outline: 0.2rem solid var(--rose-pink);
   outline-offset: 4px;
   background-color: var(--rose-pink);
+}
+
+.order-list{
+  width: 40%;
+  height: auto;
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  background-color: #f8dce1;
+  text-align: center;
+  padding: 2rem;
+  color: #b10762;
+  display: none;
+}
+
+.confirm-order{
+  padding: .5rem 1rem;
+  background-color: #fbe6c7;
+  color: #AC3F3F;
+  border-color: #AC3F3F;
+}
+
+.add-to-cart{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+.add-to-cart:hover,.add-to-cart:focus{
+  box-shadow: 2px 2px 10px var(--pastel-pink);
+  background-color: var(--rose-pink);
+}
+
+.add-to-cart img{
+  width:2.5rem;
+}
+.cart-item{
+  text-align: start;
+}
+.item-details{
+  display: flex;
+  justify-content: space-between;
+}
+.cart-item img{
+  width: 10%;
 }
 
 @media only screen and (max-width: 450px) { 

@@ -5,7 +5,14 @@ import { CiMenuKebab } from "react-icons/ci";
 
 
 export default function Header(){
+
+    const cartImg = require("../img/cart.png");  
+
     const [toggled, setToggled] = React.useState(false);
+    function showCart(){
+        const elem = document.getElementById("cart")
+        elem.style.display = (elem.style.display === 'none') ? 'block' : 'none';
+    }
 
     return(
         <header>
@@ -39,6 +46,7 @@ export default function Header(){
                         <li className="nav-item"><a href="#review-card">Reviews</a></li>
                         <li className="nav-item"><a href="#footer">Contact</a></li>
                     </ul>
+                    <button id="add-to-cart" className="add-to-cart" onClick={showCart}><a href="#cart"><img src={cartImg} alt="cart"/></a></button>
                 </nav>
         
         
