@@ -128,9 +128,9 @@ export default function MenuCard(props) {
                             <div className="price-details">
                                 <p className="product-price">${price.toFixed(2)}</p>
                                 <div className="cart-buttons">
-                                    <button className='cart-add' onClick={() => addItemToCart(item)}>+</button>
+                                    <button className='cart-btn cart-add' onClick={() => addItemToCart(item)}>+</button>
                                     <span>{cart.find(cartItem => cartItem.id === item.id)?.orderCount || 0}</span>
-                                    <button className='cart-remove' onClick={() => removeItemFromCart(item)}>-</button>
+                                    <button className='cart-btn cart-remove' onClick={() => removeItemFromCart(item)}>-</button>
                                 </div>
                             </div>
                         </section>

@@ -412,11 +412,14 @@ input[type=text], input[type=email]{
   position: fixed;
   top: 6rem;
   right: 0;
-  background-color: #f8dce1;
+  background:url("https://i.pinimg.com/564x/b8/fc/54/b8fc5415df673495eecec24437b018e5.jpg");
+  background-size: cover;
   text-align: center;
   padding: 2rem;
   color: #b10762;
   display: none;
+  font-weight: bolder;
+  box-shadow: 5px 5px 10px var(--dark-gray);
 }
 
 .confirm-order{
@@ -451,6 +454,28 @@ input[type=text], input[type=email]{
 }
 .cart-item img{
   width: 10%;
+}
+
+.cart-buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-btn{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  background: none;
+  border: 1px solid grey;
+  font-size: 1.3rem;
+  color: gray;
+}
+.cart-btn:hover,.cart-btn:focus{
+  border-color: var(--lusious-pink);
+  color: var(--lusious-pink);
+  background-color: #e1187234;
 }
 
 @media only screen and (max-width: 450px) { 

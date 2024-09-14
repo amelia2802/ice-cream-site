@@ -30,7 +30,8 @@ export default function Header(){
                         <Menu>
                             <MenuItem className="nav-item" href="#">Home</MenuItem>
                             <MenuItem className="nav-item" href="#product">Menu</MenuItem>
-                            <MenuItem className="nav-item" href="#about-section">About</MenuItem>
+                            <MenuItem className="nav-item" href="#cart">Cart</MenuItem>
+                            <MenuItem id="add-to-cart" className="nav-item" href="#about-section" onClick={showCart}>About</MenuItem>
                             <MenuItem className="nav-item" href="#footer">Contact</MenuItem>
                         </Menu >
                     </nav>
