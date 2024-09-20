@@ -6,10 +6,6 @@ export default function Cart({ cart, totalPrice, handleCheckout }) {
             return <p>Your cart is empty.</p>;
         }
 
-        if(cart.length>0){
-            document.getElementById("notify").style.visibility="visible"
-        }
-
         return (
             <>
                 {cart.map(item => (

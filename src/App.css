@@ -273,10 +273,11 @@ article{
   top: .2rem;
   right: .1rem;
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: .7rem;
+  height: .7rem;
   border-radius: 100%;
-  background-color: aliceblue;
+  background-color: transparent;
+  box-shadow: 10px 1px 1px yellow;
   visibility: hidden;
 }
 

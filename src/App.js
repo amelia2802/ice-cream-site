@@ -21,6 +21,10 @@ function App() {
     const existingItem = cart.find(cartItem => cartItem.id === item.id);
     const price = parseFloat(item.price);
 
+    if(cart.length!==0){
+      document.getElementById("notify").style.visibility="visible"
+    }
+
     if (isNaN(price)) {
       console.error(`Invalid price for item ${item.name}: ${item.price}`);
       return;
