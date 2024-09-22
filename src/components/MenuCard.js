@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MenuCard({ items, cart, totalPrice, addItemToCart, removeItemFromCart }) {
+export default function MenuCard({ items, cart, addItemToCart, removeItemFromCart }) {
     const filledStar = require("../img/star-filled.png");
     const blankStar = require("../img/star-blank.png");
 

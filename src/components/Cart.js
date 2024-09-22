@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Cart({ cart, totalPrice, handleCheckout }) {
+export default function Cart({ cart, totalPrice,addItemToCart,removeItemFromCart }) {
+
     const renderCartItems = () => {
         if (cart.length === 0) {
             return <p>Your cart is empty.</p>;
@@ -15,6 +16,11 @@ export default function Cart({ cart, totalPrice, handleCheckout }) {
                             <img src={require(`../img/${item.img}`)} alt={item.name} />
                         </div>
                         <p>$ {parseFloat(item.orderCount * item.price).toFixed(2)}</p>
+                        <div>
+                            <button className="cart-btn cart-add" onClick={() => addItemToCart(item)}>+</button>
+                            <span>{cart.find(cartItem => cartItem.id === item.id)?.orderCount || 0}</span>
+                            <button className="cart-btn cart-remove" onClick={() => removeItemFromCart(item)}>-</button>
+                        </div>
                     </div>
                 ))}
                 <h3>Order Summary</h3>

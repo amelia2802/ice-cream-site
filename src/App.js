@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Offers from "./components/Offers";
@@ -12,17 +12,15 @@ import data from "./data";
 import './App.css';
 
 function App() {
-  // State for cart and total price
   const [cart, setCart] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  // Add item to cart
   const addItemToCart = (item) => {
     const existingItem = cart.find(cartItem => cartItem.id === item.id);
     const price = parseFloat(item.price);
 
-    if(cart.length!==0){
-      document.getElementById("notify").style.visibility="visible"
+    if (cart.length !== 0) {
+      document.getElementById("notify").style.visibility = "visible";
     }
 
     if (isNaN(price)) {
@@ -46,7 +44,6 @@ function App() {
     setTotalPrice(parseFloat(newTotalPrice.toFixed(2)));
   };
 
-  // Remove item from cart
   const removeItemFromCart = (item) => {
     const existingItem = cart.find(cartItem => cartItem.id === item.id);
 
@@ -68,7 +65,6 @@ function App() {
     }
   };
 
-  // Handle checkout
   const handleCheckout = () => {
     alert(`Proceeding to payment for $${totalPrice.toFixed(2)}`);
     setCart([]);
@@ -80,9 +76,7 @@ function App() {
       <div className="App">
         <Header />
 
-        {/* Define Routes */}
         <Routes>
-          {/* Main Route for Home Page */}
           <Route
             path="/"
             element={
@@ -101,12 +95,10 @@ function App() {
                 <About />
                 <Testimonials />
                 <div className="divider-2"></div>
-                <Footer /> 
+                <Footer />
               </>
             }
           />
-
-          {/* Route for Orders Page */}
           <Route
             path="/orders"
             element={
@@ -114,6 +106,8 @@ function App() {
                 cart={cart}
                 totalPrice={totalPrice}
                 handleCheckout={handleCheckout}
+                addItemToCart={addItemToCart} // Pass the addItemToCart function
+                removeItemFromCart={removeItemFromCart} // Pass the removeItemFromCart function
               />
             }
           />
