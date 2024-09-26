@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AddToHomeScreen from 'react-add-to-homescreen';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -65,11 +66,7 @@ function App() {
     }
   };
 
-  const handleCheckout = () => {
-    alert(`Proceeding to payment for $${totalPrice.toFixed(2)}`);
-    setCart([]);
-    setTotalPrice(0);
-  };
+  
 
   return (
     <Router>
@@ -105,7 +102,6 @@ function App() {
               <Orders
                 cart={cart}
                 totalPrice={totalPrice}
-                handleCheckout={handleCheckout}
                 addItemToCart={addItemToCart} // Pass the addItemToCart function
                 removeItemFromCart={removeItemFromCart} // Pass the removeItemFromCart function
               />
@@ -113,6 +109,7 @@ function App() {
           />
         </Routes>
       </div>
+      <AddToHomeScreen />
     </Router>
   );
 }

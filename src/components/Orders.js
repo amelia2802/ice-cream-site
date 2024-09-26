@@ -1,7 +1,11 @@
 import React from "react";
 import Cart from "./Cart";
 
-export default function Orders({ cart, totalPrice, handleCheckout, addItemToCart, removeItemFromCart }) {
+export default function Orders({ cart, totalPrice, addItemToCart, removeItemFromCart }) {
+  const handleCheckout = () => {
+    alert(`Proceeding to payment for $${totalPrice.toFixed(2)}`);
+  };
+
   return (
     <section id="order">
       <Cart
