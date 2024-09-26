@@ -1,0 +1,19 @@
+{
+    "name":"Luvelicious",
+    "short_name":"Luvelicious",
+    "icons":[
+        {
+            "src":"/android-chrome-192x192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"/android-chrome-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ],
+    "theme_color":"#e11874",
+    "background_color":"#fbe6c7",
+    "display":"standalone"
+}

@@ -48,7 +48,7 @@ export default function Orders({ cart, totalPrice, handleCheckout, addItemToCart
               handleCheckout(); // Proceed with checkout
             }}
           >
-            Proceed to Pay
+            Proceed to Pay ${totalPrice}
           </button>
         </form>
       </div>

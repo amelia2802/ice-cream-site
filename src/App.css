@@ -420,12 +420,14 @@ footer input[type=text], input[type=email]{
 }
 
 #order{
+  height: max-content;
   display: flex;
   text-align: center;
   width: 100%;
   height: auto;
   padding-top: 5rem;
   justify-content: space-evenly;
+  overflow-y: scroll;
 }
 
 .order-list{
