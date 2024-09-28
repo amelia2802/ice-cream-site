@@ -4,7 +4,11 @@ export default function Cart({ cart, totalPrice,addItemToCart,removeItemFromCart
 
     const renderCartItems = () => {
         if (cart.length === 0) {
-            return <p>Your cart is empty.</p>;
+            return(
+                <><img className="no-item" src={require("../img/no-item.png")} alt="sad icecream" />
+                    <p className="no-item">Your cart is empty.</p>
+                </>
+            ) 
         }
 
         return (

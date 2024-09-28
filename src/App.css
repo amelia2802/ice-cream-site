@@ -525,6 +525,15 @@ footer input[type=text], input[type=email]{
   background-color: #e1187234;
 }
 
+.cart-header,.no-item{
+  text-align: center;
+}
+
+.no-item{
+  width: 20rem;
+  transform: translateX(50%);
+}
+
 @media only screen and (max-width: 450px) { 
   body{
     overflow-x: hidden;
