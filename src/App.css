@@ -190,6 +190,10 @@ header{
   border-radius: 50%;
 }
 
+.cart-body{
+  height: 100%;
+}
+
 .product-name{
   color: var(--chocolate-milk);
   font-size: 1.2rem;
@@ -420,14 +424,19 @@ footer input[type=text], input[type=email]{
 }
 
 #order{
-  height: max-content;
+  height: 100%;
   display: flex;
   text-align: center;
   width: 100%;
   height: auto;
   padding-top: 5rem;
   justify-content: space-evenly;
-  overflow-y: scroll;
+}
+
+.thanks-msg {
+  padding: 1rem 0;
+  color: var(--lusious-pink);
+  text-align: center;
 }
 
 .order-list{

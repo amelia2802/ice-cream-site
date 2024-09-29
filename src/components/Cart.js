@@ -12,7 +12,7 @@ export default function Cart({ cart, totalPrice,addItemToCart,removeItemFromCart
         }
 
         return (
-            <>
+            <div className="cart-body">
                 {cart.map(item => (
                     <div key={item.id} className="cart-item">
                         <div className="item-details">
@@ -32,7 +32,7 @@ export default function Cart({ cart, totalPrice,addItemToCart,removeItemFromCart
                     <p>Total Price: </p>
                     <p>$ {totalPrice.toFixed(2)}</p>
                 </div>
-            </>
+            </div>
         );
     };
 

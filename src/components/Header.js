@@ -29,7 +29,7 @@ export default function Header() {
                                     <a href="#product" onClick={() => setToggled(false)}>Menu</a> {/* Smooth scroll link */}
                                 </MenuItem>
                                 <MenuItem className="nav-item">
-                                    <a href="#cart" onClick={() => setToggled(false)}>Cart</a> {/* Smooth scroll link */}
+                                    <Link to="/orders" onClick={() => setToggled(false)}>Cart</Link> {/* Smooth scroll link */}
                                 </MenuItem>
                                 <MenuItem className="nav-item">
                                     <a href="#about-section" onClick={() => setToggled(false)}>About</a> {/* Smooth scroll link */}
