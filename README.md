@@ -15,6 +15,7 @@ Welcome to the Luvelicious Site! This project showcases a dynamic ice cream webs
 - **React:** The site is built using React, a popular JavaScript library for building user interfaces.
 - **JavaScript:** Leveraged JavaScript for dynamic content generation and star rating functionality.
 - **CSS:** Styled the site with CSS for a clean and responsive design.
+- 
 
 ## 🖥️ Project Structure
 
