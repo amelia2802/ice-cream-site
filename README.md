@@ -3,7 +3,13 @@
 Welcome to the Luvelicious Site! This project showcases a dynamic ice cream website built using React. The site includes various sections such as Header, Hero Section, Offers, Menu, About, Testimonials, and Footer.
 ![Brown Modern Visit Our Website Video Instagram Post](https://github.com/user-attachments/assets/6d7e793e-ebc5-4190-a8d8-bc153275c497)
 
-![Mockup](https://github.com/user-attachments/assets/cba25d96-36d9-4c05-8aa0-ee505dc007ea)
+## Mockups
+
+## Mockup Overview
+
+| Main Mockup | Checkout Mockup | Empty Cart Mockup |
+| ------------ | ---------------- | ------------------ |
+| ![Main Mockup](https://github.com/user-attachments/assets/cba25d96-36d9-4c05-8aa0-ee505dc007ea) | ![Checkout Mockup](https://github.com/user-attachments/assets/e18d29bc-cd11-4004-9ea8-31fe68a485b6) | ![Empty Cart Mockup](https://github.com/user-attachments/assets/97ce976e-9501-4a62-8f7c-2936a5dae8dd) |
 
 
 ## 🚀 Features
