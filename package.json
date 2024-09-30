@@ -15,6 +15,7 @@
     "react-pro-sidebar": "^1.1.0",
     "react-router-dom": "^6.26.2",
     "web-vitals": "^2.1.4",
+    "workbox-cli": "^7.1.0",
     "workbox-webpack-plugin": "^7.1.0"
   },
   "scripts": {
